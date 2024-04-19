@@ -50,4 +50,14 @@
 ![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2-2Z.png)
 ![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2-3Z.png)
 ![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2-4Z.png)
+
+#### Используемые команды:
+
+   1. sudo apt update
+   2. wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release>
+   3. sudo dpkg -i zabbix-release_6.0-5+debian12_all.deb
+   4. sudo apt update
+   5. sudo apt install zabbix-agent
+   6. sudo systemctl status zabbix-agent.service
+
 ---
