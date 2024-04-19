@@ -1,4 +1,4 @@
-# Домашнее задание к занятию "`Что такое DevOps. СI/СD`" - `Блинов А.С.`
+# Домашнее задание к занятию "`Система мониторинга Zabbix`" - `Блинов А.С.`
 
 
 ### Инструкция по выполнению домашнего задания
@@ -23,23 +23,31 @@
 ---
 
 ### Задание 1
-![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/1.png)
-![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2.png)
-![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3.png)
-![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/4.png)
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/1-1Z.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/1-2Z.png)
+
+#### Используемые команды:
+
+   1. sudo apt update
+   2. sudo apt install postgresql
+   3. wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-5+debian12_all.deb
+   4. sudo dpkg -i zabbix-release_6.0-5+debian12_all.deb
+   5. sudo apt update
+   6. sudo apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts
+   7. sudo systemctl status zabbix-server.service
+   8. sudo -u postgres createuser --pwprompt zabbix
+   9. sudo -u postgres createdb -O zabbix zabbix
+   10. zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
+   11. nano /etc/zabbix/zabbix_server.conf; меняем строчку DBPassword=password на свой пароль
+   12. systemctl restart zabbix-server apache2
+   13. systemctl enable zabbix-server apache2 
+   14. systemctl status zabbix-server.service
 
 ---
 
 ### Задание 2
-![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2-1.png)
-![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2-2.png)
-
----
-
-### Задание 3
-![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3-0.png)
-![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3-1.png)
-![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3-2.png)
-![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3-3.png)
-
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2-1Z.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2-2Z.png)
+![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2-3Z.png)
+![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2-4Z.png)
 ---
