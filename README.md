@@ -61,3 +61,9 @@
    6. sudo systemctl status zabbix-agent.service
 
 ---
+
+### Задание 3
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/zabbix/img/3-1Z.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/zabbix/img/3-2Z.png)
+
+---
