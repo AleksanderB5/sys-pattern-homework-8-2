@@ -1,4 +1,4 @@
-# Домашнее задание к занятию "`Что такое DevOps. СI/СD`" - `Блинов А.С.`
+# Домашнее задание к занятию "`Система мониторинга Zabbix. Часть 2`" - `Блинов А.С.`
 
 
 ### Инструкция по выполнению домашнего задания
@@ -23,23 +23,17 @@
 ---
 
 ### Задание 1
-![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/1.png)
-![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2.png)
-![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3.png)
-![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/4.png)
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/1Z2.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2Z2.png)
 
 ---
 
-### Задание 2
-![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2-1.png)
-![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2-2.png)
+### Задание 2-3
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2-3Z2.png)
 
 ---
 
-### Задание 3
-![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3-0.png)
-![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3-1.png)
-![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3-2.png)
-![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3-3.png)
+### Задание 4
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/4Z2.png)
 
 ---
