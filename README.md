@@ -9,7 +9,7 @@
 
 ### Решение 1
 
-![Скриншот-1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/sql>
+![Скриншот-1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/sql/фото/1-sql2.png)
 
 ### Задание 2
 
@@ -17,7 +17,7 @@
 
 ### Решение 2
 
-![Скриншот-2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/sql>
+![Скриншот-2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/sql/фото/2-sql2.png)
 
 ### Задание 3
 
@@ -25,7 +25,7 @@
 
 ### Решение 3
 
-![Скриншот-3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/sql>
+![Скриншот-3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/sql/фото/3-sql2.png)
 
 ## Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не по>
@@ -35,8 +35,7 @@
 
 ### Решение 4
 
-![Скриншот-4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/sql>
-
+![Скриншот-4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/sql/фото/4-sql2.png)
 
 ### Задание 5*
 
@@ -44,5 +43,4 @@
 
 ### Решение 5
 
-![Скриншот-5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/sql>
-
+![Скриншот-5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/sql/фото/5-sql2.png)
