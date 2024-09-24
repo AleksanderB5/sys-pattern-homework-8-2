@@ -13,6 +13,7 @@
 
 ![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ЗащитаХоста/фото/1-1%20защ.png)
 ![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ЗащитаХоста/фото/1-2%20защ.png)
+![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ЗащитаХоста/фото/1-3%20защ.png)
 
 ### Задание 2
 
