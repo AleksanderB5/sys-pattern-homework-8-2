@@ -39,4 +39,6 @@ See 'snap info docker' for additional versions.
 ### Решение 1
 ![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/практика/скрины/1/1-1.png)
 
-```https://github.com/AleksanderB5/shvirtd-example-python```
+Ссылка на fork-репозиторий: [https://github.com/AleksanderB5/shvirtd-example-python]
+
+Dockerfile.python []
