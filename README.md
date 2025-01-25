@@ -90,3 +90,31 @@ bash-скрипт "project.sh" [Тут](https://github.com/AleksanderB5/sys-patt
 Ссылка на fork-репозиторий: [https://github.com/AleksanderB5/shvirtd-example-python]
 
 Скрины по заданию: [Тут](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/практика/скрины/4)
+
+---
+
+## Задача 6
+Скачайте docker образ ```hashicorp/terraform:latest``` и скопируйте бинарный файл ```/bin/terraform``` на свою локальную машину, используя dive и docker save.
+Предоставьте скриншоты  действий .
+
+---
+
+### Решение 6
+![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/практика/скрины/6/6-1.png)
+![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/практика/скрины/6/6-2.png)
+![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/практика/скрины/6/6-3.png)
+![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/практика/скрины/6/6-4.png)
+![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/практика/скрины/6/6-5.png)
+![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/практика/скрины/6/6-6.png)
+![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/практика/скрины/6/6-7.png)
+
+---
+
+## Задача 6.1
+Добейтесь аналогичного результата, используя docker cp.  
+Предоставьте скриншоты  действий .
+
+### Решение 6.1
+![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/практика/скрины/6/7-1.png)
+![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/практика/скрины/6/7-2.png)
+![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/практика/скрины/6/7-3.png)
