@@ -68,3 +68,25 @@ Dockerfile.python [https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob
 ![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/практика/скрины/3/3-1.png)
 ![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/практика/скрины/3/3-2.png)
 ![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/практика/скрины/3/3-3.png)
+
+---
+
+## Задача 4
+1. Запустите в Yandex Cloud ВМ (вам хватит 2 Гб Ram).
+2. Подключитесь к Вм по ssh и установите docker.
+3. Напишите bash-скрипт, который скачает ваш fork-репозиторий в каталог /opt и запустит проект целиком.
+4. Зайдите на сайт проверки http подключений, например(или аналогичный): ```https://check-host.net/check-http``` и запустите проверку вашего сервиса ```http://<внешний_IP-адрес_вашей_ВМ>:8090```. Таким образом трафик будет направлен в ingress-proxy. ПРИМЕЧАНИЕ:  приложение main.py( в отличие от not_tested_main.py) весьма вероятно упадет под нагрузкой, но успеет обработать часть запросов - этого достаточно. Обновленная версия (main.py) не прошла достаточного тестирования временем, но должна справиться с нагрузкой.
+5. (Необязательная часть) Дополнительно настройте remote ssh context к вашему серверу. Отобразите список контекстов и результат удаленного выполнения ```docker ps -a```
+6. В качестве ответа повторите  sql-запрос и приложите скриншот с данного сервера, bash-скрипт и ссылку на fork-репозиторий.
+
+---
+
+### Решение 4
+![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/практика/скрины/4/4-10.png)
+![скрин](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/практика/скрины/4/4-11.png)
+
+bash-скрипт "project.sh" [Тут](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/практика/файлы/project.sh)
+
+Ссылка на fork-репозиторий: [https://github.com/AleksanderB5/shvirtd-example-python]
+
+Скрины по заданию: [Тут](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/практика/скрины/4)
