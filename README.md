@@ -42,3 +42,9 @@
 ------
 
 ### Решение 1
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform1/скрины/ter1/0-1.png)
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform1/скрины/ter1/1-1.png)
+
+### Решение 2
+> #### Согласно **.gitignore** допустимо сохранить личную, секретную информацию в файле `personal.auto.tfvars`
