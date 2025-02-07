@@ -126,3 +126,34 @@
 ### Решение 2
 
 ![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/2-1.png)
+
+### Решение 3
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/3-1.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/3-2.png)
+![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/3-3.png)
+![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/3-4.png)
+![Скриншот 5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/3-5.png)
+
+### Решение 4
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/4-1.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/4-2.png)
+
+### Решение 5
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/5-1%20лок.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/5-2%20вар.png)
+![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/5-3%20мейн.png)
+![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/5-4%20мейн.png)
+![Скриншот 5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/5-5.png)
+
+### Решение 6
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/6-1.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/6-2.png)
+![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/6-3.png)
+![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/6-4.png)
+![Скриншот 5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/6-5.png)
+
+Все файлы [ТУТ](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/terraform2/файлы/src)
