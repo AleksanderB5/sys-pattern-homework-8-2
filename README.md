@@ -111,6 +111,7 @@
 ### Решение 1
 
 ![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/1-1.png)
+---
 ![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform2/Скрины/1-2.png)
 
 4. Ошибки были следующие:
