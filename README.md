@@ -1,45 +1,105 @@
-# Домашнее задание к занятию "`Что такое DevOps. СI/СD`" - `Блинов А.С.`
+# Домашнее задание к занятию "`Управляющие конструкции в коде Terraform`" - `Блинов А.С.`
+### Цели задания
 
+1. Отработать основные принципы и методы работы с управляющими конструкциями Terraform.
+2. Освоить работу с шаблонизатором Terraform (Interpolation Syntax).
 
-### Инструкция по выполнению домашнего задания
+------
 
-   1. Сделайте `fork` данного репозитория к себе в Github и переименуйте его по названию или номеру занятия, например, https://github.com/имя-вашего-репозитория/git-hw или  https://github.com/имя-вашего-репозитория/7-1-ansible-hw).
-   2. Выполните клонирование данного репозитория к себе на ПК с помощью команды `git clone`.
-   3. Выполните домашнее задание и заполните у себя локально этот файл README.md:
-      - впишите вверху название занятия и вашу фамилию и имя
-      - в каждом задании добавьте решение в требуемом виде (текст/код/скриншоты/ссылка)
-      - для корректного добавления скриншотов воспользуйтесь [инструкцией "Как вставить скриншот в шаблон с решением](https://github.com/netology-code/sys-pattern-homework/blob/main/screen-instruction.md)
-      - при оформлении используйте возможности языка разметки md (коротко об этом можно посмотреть в [инструкции  по MarkDown](https://github.com/netology-code/sys-pattern-homework/blob/main/md-instruction.md))
-   4. После завершения работы над домашним заданием сделайте коммит (`git commit -m "comment"`) и отправьте его на Github (`git push origin`);
-   5. Для проверки домашнего задания преподавателем в личном кабинете прикрепите и отправьте ссылку на решение в виде md-файла в вашем Github.
-   6. Любые вопросы по выполнению заданий спрашивайте в чате учебной группы и/или в разделе “Вопросы по заданию” в личном кабинете.
-   
-Желаем успехов в выполнении домашнего задания!
-   
-### Дополнительные материалы, которые могут быть полезны для выполнения задания
+### Чек-лист готовности к домашнему заданию
 
-1. [Руководство по оформлению Markdown файлов](https://gist.github.com/Jekins/2bf2d0638163f1294637#Code)
+1. Зарегистрирован аккаунт в Yandex Cloud. Использован промокод на грант.
+2. Установлен инструмент Yandex CLI.
+3. Доступен исходный код для выполнения задания в директории [**03/src**](https://github.com/netology-code/ter-homeworks/tree/main/03/src).
+4. Любые ВМ, использованные при выполнении задания, должны быть прерываемыми, для экономии средств.
 
----
+------
+
+### Внимание!! Обязательно предоставляем на проверку получившийся код в виде ссылки на ваш github-репозиторий!
+Убедитесь что ваша версия **Terraform** ~>1.8.4
+Теперь пишем красивый код, хардкод значения не допустимы!
+------
 
 ### Задание 1
-![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/1.png)
-![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2.png)
-![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3.png)
-![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/4.png)
 
----
+1. Изучите проект.
+2. Инициализируйте проект, выполните код. 
+
+
+Приложите скриншот входящих правил «Группы безопасности» в ЛК Yandex Cloud .
+
+------
 
 ### Задание 2
-![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2-1.png)
-![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2-2.png)
 
----
+1. Создайте файл count-vm.tf. Опишите в нём создание двух **одинаковых** ВМ  web-1 и web-2 (не web-0 и web-1) с минимальными параметрами, используя мета-аргумент **count loop**. Назначьте ВМ созданную в первом задании группу безопасности.(как это сделать узнайте в документации провайдера yandex/compute_instance )
+2. Создайте файл for_each-vm.tf. Опишите в нём создание двух ВМ для баз данных с именами "main" и "replica" **разных** по cpu/ram/disk_volume , используя мета-аргумент **for_each loop**. Используйте для обеих ВМ одну общую переменную типа:
+```
+variable "each_vm" {
+  type = list(object({  vm_name=string, cpu=number, ram=number, disk_volume=number }))
+}
+```  
+При желании внесите в переменную все возможные параметры.
+4. ВМ из пункта 2.1 должны создаваться после создания ВМ из пункта 2.2.
+5. Используйте функцию file в local-переменной для считывания ключа ~/.ssh/id_rsa.pub и его последующего использования в блоке metadata, взятому из ДЗ 2.
+6. Инициализируйте проект, выполните код.
+
+------
 
 ### Задание 3
-![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3-0.png)
-![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3-1.png)
-![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3-2.png)
-![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3-3.png)
 
----
+1. Создайте 3 одинаковых виртуальных диска размером 1 Гб с помощью ресурса yandex_compute_disk и мета-аргумента count в файле **disk_vm.tf** .
+2. Создайте в том же файле **одиночную**(использовать count или for_each запрещено из-за задания №4) ВМ c именем "storage"  . Используйте блок **dynamic secondary_disk{..}** и мета-аргумент for_each для подключения созданных вами дополнительных дисков.
+
+------
+
+### Задание 4
+
+1. В файле ansible.tf создайте inventory-файл для ansible.
+Используйте функцию tepmplatefile и файл-шаблон для создания ansible inventory-файла из лекции.
+Готовый код возьмите из демонстрации к лекции [**demonstration2**](https://github.com/netology-code/ter-homeworks/tree/main/03/demo).
+Передайте в него в качестве переменных группы виртуальных машин из задания 2.1, 2.2 и 3.2, т. е. 5 ВМ.
+2. Инвентарь должен содержать 3 группы и быть динамическим, т. е. обработать как группу из 2-х ВМ, так и 999 ВМ.
+3. Добавьте в инвентарь переменную  [**fqdn**](https://cloud.yandex.ru/docs/compute/concepts/network#hostname).
+``` 
+[webservers]
+web-1 ansible_host=<внешний ip-адрес> fqdn=<полное доменное имя виртуальной машины>
+web-2 ansible_host=<внешний ip-адрес> fqdn=<полное доменное имя виртуальной машины>
+
+[databases]
+main ansible_host=<внешний ip-адрес> fqdn=<полное доменное имя виртуальной машины>
+replica ansible_host<внешний ip-адрес> fqdn=<полное доменное имя виртуальной машины>
+
+[storage]
+storage ansible_host=<внешний ip-адрес> fqdn=<полное доменное имя виртуальной машины>
+```
+Пример fqdn: ```web1.ru-central1.internal```(в случае указания переменной hostname(не путать с переменной name)); ```fhm8k1oojmm5lie8i22a.auto.internal```(в случае отсутвия перменной hostname - автоматическая генерация имени,  зона изменяется на auto). нужную вам переменную найдите в документации провайдера или terraform console.
+4. Выполните код. Приложите скриншот получившегося файла. 
+
+Для общего зачёта создайте в вашем GitHub-репозитории новую ветку terraform-03. Закоммитьте в эту ветку свой финальный код проекта, пришлите ссылку на коммит.   
+**Удалите все созданные ресурсы**.
+
+------
+
+### Решение 1
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform3/Скрины/1-1.png)
+------
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform3/Скрины/1-2.png)
+
+### Решение 2
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform3/Скрины/2-1.png)
+
+### Решение 3
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform3/Скрины/3-1.png)
+------
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform3/Скрины/3-2.png)
+
+### Решение 4
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform3/Скрины/4-1.png)
+------
+
+Все файлы [ТУТ](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/terraform3/файлы/src)
