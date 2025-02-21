@@ -29,13 +29,12 @@ image_id = "fd8g64rcu9fq5kpfqls0"
 }
 }
 
-  dynamic secondary_disk {
-   for_each = "${yandex_compute_disk.disk.*.id}"
-   content {
-        disk_id = yandex_compute_disk.disk["${secondary_disk.key}"].id
-   }
+  dynamic "secondary_disk" {
+    for_each = yandex_compute_disk.disk
+    content {
+      disk_id = secondary_disk.value.id
+    }
 }
-
 
   network_interface {
     subnet_id = yandex_vpc_subnet.develop.id
