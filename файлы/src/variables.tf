@@ -78,3 +78,40 @@ variable "zone" {
   type=string
   default= "ru-central1-a"
 }
+
+
+variable "fqdn" {
+  description = "fqdn"
+  type        = string
+}
+
+variable "subnet_id" {
+  description = "Subnet ID"
+  default     = "yandex_vpc_subnet.develop.id"
+}
+
+variable "disk_image_id" {
+  description = "Image ID"
+  default     = "fd8nru7hnggqhs9mkqps"
+}
+
+variable "labels" {
+  description = "Labels for resources"
+  type        = map(string)
+  default     = { environment = "test" }
+}
+
+variable "instance_image_id" {
+  description = "Image ID for the instance"
+  default     = "fd8g64rcu9fq5kpfqls0"
+}
+
+variable "disk_size" {
+  description = "Size of the disk in GB"
+  default     = 16
+}
+
+variable "disk_type" {
+  description = "Type of the disk"
+  default     = "network-ssd"
+}

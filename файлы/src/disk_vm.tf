@@ -1,19 +1,17 @@
 resource "yandex_compute_disk" "disk" {
   count    = 3
   name     = "disk-name-${count.index}"
-  size     = "16"
-  type     = "network-ssd"
+  size     = var.disk_size
+  type     = var.disk_type
   zone     = var.zone
-  image_id = "fd8nru7hnggqhs9mkqps"
+  image_id = var.disk_image_id
 
-  labels = {
-    environment = "test"
-  }
+  labels = var.labels
 }
 
 resource "yandex_compute_instance" "storage" {
 name = "storage"
-platform_id = "standard-v3"
+platform_id = var.platform_id
 zone = var.zone
 allow_stopping_for_update = "true"
 
@@ -25,7 +23,7 @@ allow_stopping_for_update = "true"
 
 boot_disk {
 initialize_params {
-image_id = "fd8g64rcu9fq5kpfqls0"
+image_id = var.instance_image_id
 }
 }
 

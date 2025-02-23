@@ -23,7 +23,6 @@ resource "yandex_compute_instance" "count" {
     security_group_ids = [ 
       yandex_vpc_security_group.example.id
     ]
-
   }
 
   metadata = {

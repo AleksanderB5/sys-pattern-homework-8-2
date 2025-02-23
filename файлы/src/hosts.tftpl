@@ -1,25 +1,17 @@
-[webservers]
+# Fully Qualified Domain Name
+{{ fqdn }}
 
-%{~ for i in webservers ~}
+# Web Servers
+[% for ip in webservers %]
+{{ ip }}
+[% endfor %]
 
-${i["name"]}   ansible_host=${i["network_interface"][0]["nat_ip_address"]==null ? i["network_interface"][0]["ip_address"] : i["network_interface"][0]["nat_ip_address"]}
+# Databases
+[% for ip in databases %]
+{{ ip }}
+[% endfor %]
 
-%{~ endfor ~}
-
-
-[databases]
-
-%{~ for i in databases ~}
-
-${i["name"]}   ansible_host=${i["network_interface"][0]["nat_ip_address"]==null ? i["network_interface"][0]["ip_address"] : i["network_interface"][0]["nat_ip_address"]}
-
-%{~ endfor ~}
-
-
-[storage]
-
-%{~ for i in storage ~}
-
-${i["name"]}   ansible_host=${i["network_interface"][0]["nat_ip_address"]==null ? i["network_interface"][0]["ip_address"] : i["network_interface"][0]["nat_ip_address"]}
-
-%{~ endfor ~}
+# Storage
+[% for ip in storage %]
+{{ ip }}
+[% endfor %]

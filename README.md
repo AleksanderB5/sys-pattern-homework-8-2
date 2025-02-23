@@ -112,3 +112,8 @@ storage ansible_host=<внешний ip-адрес> fqdn=<полное доме�
 ------
 
 Все файлы [ТУТ](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/terraform3/файлы/src)
+
+### Исправление 2
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/terraform3/Скрины/и2-1.png)
+Все файлы [ТУТ](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/terraform3/файлы/src)
