@@ -1,4 +1,4 @@
-# Домашнее задание к занятию 1 «Введение в Ansible»
+# Домашнее задание к занятию «Введение в Ansible» - `Блинов А.С.`
 
 ## Подготовка к выполнению
 
@@ -21,16 +21,6 @@
 11. Запустите playbook на окружении `prod.yml`. При запуске `ansible` должен запросить у вас пароль. Убедитесь, что факты `some_fact` для каждого из хостов определены из верных `group_vars`.
 12. Заполните `README.md` ответами на вопросы. Сделайте `git push` в ветку `master`. В ответе отправьте ссылку на ваш открытый репозиторий с изменённым `playbook` и заполненным `README.md`.
 13. Предоставьте скриншоты результатов запуска команд.
-
-## Необязательная часть
-
-1. При помощи `ansible-vault` расшифруйте все зашифрованные файлы с переменными.
-2. Зашифруйте отдельное значение `PaSSw0rd` для переменной `some_fact` паролем `netology`. Добавьте полученное значение в `group_vars/all/exmp.yml`.
-3. Запустите `playbook`, убедитесь, что для нужных хостов применился новый `fact`.
-4. Добавьте новую группу хостов `fedora`, самостоятельно придумайте для неё переменную. В качестве образа можно использовать [этот вариант](https://hub.docker.com/r/pycontribs/fedora).
-5. Напишите скрипт на bash: автоматизируйте поднятие необходимых контейнеров, запуск ansible-playbook и остановку контейнеров.
-6. Все изменения должны быть зафиксированы и отправлены в ваш личный репозиторий.
-
 ---
 
 ### Как оформить решение задания
@@ -38,3 +28,47 @@
 Выполненное домашнее задание пришлите в виде ссылки на .md-файл в вашем репозитории.
 
 ---
+
+### Решение 1
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible1/Скрины/1.png)
+
+### Решение 2
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible1/Скрины/2.png)
+
+### Решение 3
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible1/Скрины/3.png)
+
+### Решение 4
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible1/Скрины/4.png)
+
+### Решение 5-6
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible1/Скрины/5-6.png)
+
+### Решение 7
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible1/Скрины/7.png)
+
+### Решение 8
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible1/Скрины/8.png)
+
+### Решение 9
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible1/Скрины/9.png)
+
+### Решение 10
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible1/Скрины/10.png)
+
+### Решение 11
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible1/Скрины/11.png)
+
+------
+
+[playbook](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/Ansible1/playbook)
