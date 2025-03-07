@@ -42,5 +42,6 @@
 ![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible2/файлы/8-1.png)
 ![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible2/файлы/8-2.png)
 ------
+### Решение 9
 
 [playbook](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/Ansible2/playbook)
