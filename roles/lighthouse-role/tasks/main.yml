@@ -1,0 +1,19 @@
+- name: Download LightHouse package
+  ansible.builtin.get_url:
+    url: "https://example.com/lighthouse-package.tar.gz"
+    dest: "/tmp/lighthouse-package.tar.gz"
+    mode: '0644'
+  register: lighthouse_download  # Регистрируем результат загрузки
+
+- name: Extract LightHouse package
+  ansible.builtin.unarchive:
+    src: "/tmp/lighthouse-package.tar.gz"
+    dest: "/opt/lighthouse/"
+    remote_src: yes
+  when: lighthouse_download.changed  # Извлекаем только если загрузка прошла успешно
+
+- name: Configure LightHouse
+  ansible.builtin.template:
+    src: "lighthouse.conf.j2"
+    dest: "/opt/lighthouse/lighthouse.conf"
+  notify: Restart lighthouse service  # Уведомляем о перезапуске службы, если конфигурация изменилась
