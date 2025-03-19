@@ -45,6 +45,8 @@
 ---
 ## Ответ
 [playbook](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/Ansible3/playbook)
+--
 [vector-role](https://github.com/AleksanderB5/vector-role.git)
+--
 [lighthouse-role](https://github.com/AleksanderB5/lighthouse-role.git)
-
+--
