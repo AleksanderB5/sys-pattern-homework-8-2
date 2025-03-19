@@ -1,38 +1,42 @@
-Role Name
-=========
+# Ansible Role: LightHouse
 
-A brief description of the role goes here.
+Эта роль на Ansible устанавливает и настраивает контейнер LightHouse с помощью Docker. LightHouse — это инструмент для работы с аудитом производительности веб-страниц.
 
-Requirements
-------------
+## Оглавление
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+- [Требования](#требования)
+- [Переменные](#переменные)
+- [Задачи](#задачи)
+- [Лицензия](#лицензия)
+- [Авторы](#авторы)
 
-Role Variables
---------------
+## Требования
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+Убедитесь, что на вашей системе установлены:
 
-Dependencies
-------------
+- Ansible 2.9 или выше
+- Python 3
+- Docker
+- Разрешения на выполнение команд Docker
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+## Переменные
 
-Example Playbook
-----------------
+Ваша роль может использовать следующие переменные, определенные в `defaults/main.yml`:
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+- `light_house_image`: Имя Docker образа LightHouse (по умолчанию: `lighthouse/lighthouse`).
+- `light_house_port`: Порт, на который будет перенаправлен контейнер LightHouse (по умолчанию: `8080`).
 
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
 
-License
--------
+## Задачи
 
-BSD
+Эта роль включает в себя следующие основные задачи:
 
-Author Information
-------------------
+1. **Установка Docker**: Устанавливает Docker на вашем хосте.
+2. **Запуск службы Docker**: Убедитесь, что служба Docker запущена и работает.
+3. **Загрузка Docker образа LightHouse**: Загружает необходимый образ LightHouse.
+4. **Запуск контейнера LightHouse**: Запускает контейнер LightHouse, перенаправляя порты, чтобы сделать его доступным.
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+## Авторы
+
+- Aleksandr Blinov
+
