@@ -55,6 +55,11 @@
 ![Скриншот 7](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Жизненный-цикл-ПО/скрины/1-7.png)
 ![Скриншот 8](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Жизненный-цикл-ПО/скрины/1-8.png)
 ![Скриншот 9](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Жизненный-цикл-ПО/скрины/1-9.png)
+Баг:
+![Скриншот 10](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Жизненный-цикл-ПО/скрины/bug.png)
+Остальные:
+![Скриншот 11](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Жизненный-цикл-ПО/скрины/epic1.png)
+![Скриншот 12](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Жизненный-цикл-ПО/скрины/epic2.png)
 ---
 
 
