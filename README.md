@@ -1,45 +1,57 @@
-# Домашнее задание к занятию "`Что такое DevOps. СI/СD`" - `Блинов А.С.`
+# Домашнее задание к занятию "`Жизненный цикл ПО`" - `Блинов А.С.`
 
+## Подготовка к выполнению
 
-### Инструкция по выполнению домашнего задания
+1. Получить бесплатную версию Jira - https://www.atlassian.com/ru/software/jira/work-management/free (скопируйте ссылку в адресную строку). Вы можете воспользоваться любым(в том числе бесплатным vpn сервисом) если сайт у вас недоступен. Кроме того вы можете скачать [docker образ](https://hub.docker.com/r/atlassian/jira-software/#) и запустить на своем хосте self-managed версию jira.
+2. Настроить её для своей команды разработки.
+3. Создать доски Kanban и Scrum.
+4. [Дополнительные инструкции от разработчика Jira](https://support.atlassian.com/jira-cloud-administration/docs/import-and-export-issue-workflows/).
 
-   1. Сделайте `fork` данного репозитория к себе в Github и переименуйте его по названию или номеру занятия, например, https://github.com/имя-вашего-репозитория/git-hw или  https://github.com/имя-вашего-репозитория/7-1-ansible-hw).
-   2. Выполните клонирование данного репозитория к себе на ПК с помощью команды `git clone`.
-   3. Выполните домашнее задание и заполните у себя локально этот файл README.md:
-      - впишите вверху название занятия и вашу фамилию и имя
-      - в каждом задании добавьте решение в требуемом виде (текст/код/скриншоты/ссылка)
-      - для корректного добавления скриншотов воспользуйтесь [инструкцией "Как вставить скриншот в шаблон с решением](https://github.com/netology-code/sys-pattern-homework/blob/main/screen-instruction.md)
-      - при оформлении используйте возможности языка разметки md (коротко об этом можно посмотреть в [инструкции  по MarkDown](https://github.com/netology-code/sys-pattern-homework/blob/main/md-instruction.md))
-   4. После завершения работы над домашним заданием сделайте коммит (`git commit -m "comment"`) и отправьте его на Github (`git push origin`);
-   5. Для проверки домашнего задания преподавателем в личном кабинете прикрепите и отправьте ссылку на решение в виде md-файла в вашем Github.
-   6. Любые вопросы по выполнению заданий спрашивайте в чате учебной группы и/или в разделе “Вопросы по заданию” в личном кабинете.
-   
-Желаем успехов в выполнении домашнего задания!
-   
-### Дополнительные материалы, которые могут быть полезны для выполнения задания
+## Основная часть
 
-1. [Руководство по оформлению Markdown файлов](https://gist.github.com/Jekins/2bf2d0638163f1294637#Code)
+Необходимо создать собственные workflow для двух типов задач: bug и остальные типы задач. Задачи типа bug должны проходить жизненный цикл:
 
+1. Open -> On reproduce.
+2. On reproduce -> Open, Done reproduce.
+3. Done reproduce -> On fix.
+4. On fix -> On reproduce, Done fix.
+5. Done fix -> On test.
+6. On test -> On fix, Done.
+7. Done -> Closed, Open.
+
+Остальные задачи должны проходить по упрощённому workflow:
+
+1. Open -> On develop.
+2. On develop -> Open, Done develop.
+3. Done develop -> On test.
+4. On test -> On develop, Done.
+5. Done -> Closed, Open.
+
+**Что нужно сделать**
+
+1. Создайте задачу с типом bug, попытайтесь провести его по всему workflow до Done. 
+1. Создайте задачу с типом epic, к ней привяжите несколько задач с типом task, проведите их по всему workflow до Done. 
+1. При проведении обеих задач по статусам используйте kanban. 
+1. Верните задачи в статус Open.
+1. Перейдите в Scrum, запланируйте новый спринт, состоящий из задач эпика и одного бага, стартуйте спринт, проведите задачи до состояния Closed. Закройте спринт.
+2. Если всё отработалось в рамках ожидания — выгрузите схемы workflow для импорта в XML. Файлы с workflow и скриншоты workflow приложите к решению задания.
+
+---
+
+### Как оформить решение задания
+
+Выполненное домашнее задание пришлите в виде ссылки на .md-файл в вашем репозитории.
+
+---
 ---
 
 ### Задание 1
-![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/1.png)
-![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2.png)
-![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3.png)
-![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/4.png)
+![Скриншот 1]()
+![Скриншот 2]()
+![Скриншот 3]()
+![Скриншот 4]()
 
 ---
 
-### Задание 2
-![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2-1.png)
-![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/2-2.png)
-
----
-
-### Задание 3
-![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3-0.png)
-![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3-1.png)
-![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3-2.png)
-![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/main/img/3-3.png)
 
 ---
