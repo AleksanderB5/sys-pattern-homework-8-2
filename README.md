@@ -1,40 +1,34 @@
 # Домашнее задание к занятию "`Работа с roles`" - `Блинов А.С.`
 ## Подготовка к выполнению
 
-1. * Необязательно. Познакомьтесь с [LightHouse](https://youtu.be/ymlrNlaHzIY?t=929).
-2. Создайте два пустых публичных репозитория в любом своём проекте: vector-role и lighthouse-role.
-3. Добавьте публичную часть своего ключа к своему профилю на GitHub.
+1. В Yandex Cloud создайте новый инстанс (4CPU4RAM) на основе образа `jetbrains/teamcity-server`.
+2. Дождитесь запуска teamcity, выполните первоначальную настройку.
+3. Создайте ещё один инстанс (2CPU4RAM) на основе образа `jetbrains/teamcity-agent`. Пропишите к нему переменную окружения `SERVER_URL: "http://<teamcity_url>:8111"`.
+4. Авторизуйте агент.
+5. Сделайте fork [репозитория](https://github.com/aragastmatb/example-teamcity).
+6. Создайте VM (2CPU4RAM) и запустите [playbook](./infrastructure).
 
 ## Основная часть
 
-Ваша цель — разбить ваш playbook на отдельные roles. 
-
-Задача — сделать roles для ClickHouse, Vector и LightHouse и написать playbook для использования этих ролей. 
-
-Ожидаемый результат — существуют три ваших репозитория: два с roles и один с playbook.
-
-**Что нужно сделать**
-
-1. Создайте в старой версии playbook файл `requirements.yml` и заполните его содержимым:
-
-   ```yaml
-   ---
-     - src: git@github.com:AlexeySetevoi/ansible-clickhouse.git
-       scm: git
-       version: "1.13"
-       name: clickhouse 
-   ```
-
-2. При помощи `ansible-galaxy` скачайте себе эту роль.
-3. Создайте новый каталог с ролью при помощи `ansible-galaxy role init vector-role`.
-4. На основе tasks из старого playbook заполните новую role. Разнесите переменные между `vars` и `default`. 
-5. Перенести нужные шаблоны конфигов в `templates`.
-6. Опишите в `README.md` обе роли и их параметры. Пример качественной документации ansible role [по ссылке](https://github.com/cloudalchemy/ansible-prometheus).
-7. Повторите шаги 3–6 для LightHouse. Помните, что одна роль должна настраивать один продукт.
-8. Выложите все roles в репозитории. Проставьте теги, используя семантическую нумерацию. Добавьте roles в `requirements.yml` в playbook.
-9. Переработайте playbook на использование roles. Не забудьте про зависимости LightHouse и возможности совмещения `roles` с `tasks`.
-10. Выложите playbook в репозиторий.
-11. В ответе дайте ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook.
+1. Создайте новый проект в teamcity на основе fork.
+2. Сделайте autodetect конфигурации.
+3. Сохраните необходимые шаги, запустите первую сборку master.
+4. Поменяйте условия сборки: если сборка по ветке `master`, то должен происходит `mvn clean deploy`, иначе `mvn clean test`.
+5. Для deploy будет необходимо загрузить [settings.xml](./teamcity/settings.xml) в набор конфигураций maven у teamcity, предварительно записав туда креды для подключения к nexus.
+6. В pom.xml необходимо поменять ссылки на репозиторий и nexus.
+7. Запустите сборку по master, убедитесь, что всё прошло успешно и артефакт появился в nexus.
+8. Мигрируйте `build configuration` в репозиторий.
+9. Создайте отдельную ветку `feature/add_reply` в репозитории.
+10. Напишите новый метод для класса Welcomer: метод должен возвращать произвольную реплику, содержащую слово `hunter`.
+11. Дополните тест для нового метода на поиск слова `hunter` в новой реплике.
+12. Сделайте push всех изменений в новую ветку репозитория.
+13. Убедитесь, что сборка самостоятельно запустилась, тесты прошли успешно.
+14. Внесите изменения из произвольной ветки `feature/add_reply` в `master` через `Merge`.
+15. Убедитесь, что нет собранного артефакта в сборке по ветке `master`.
+16. Настройте конфигурацию так, чтобы она собирала `.jar` в артефакты сборки.
+17. Проведите повторную сборку мастера, убедитесь, что сбора прошла успешно и артефакты собраны.
+18. Проверьте, что конфигурация в репозитории содержит все настройки конфигурации из teamcity.
+19. В ответе пришлите ссылку на репозиторий.
 
 ---
 
@@ -43,10 +37,15 @@
 Выполненное домашнее задание пришлите в виде ссылки на .md-файл в вашем репозитории.
 
 ---
-## Ответ
-[playbook](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/Ansible3/playbook)
---
-[vector-role](https://github.com/AleksanderB5/vector-role.git)
---
-[lighthouse-role](https://github.com/AleksanderB5/lighthouse-role.git)
---
+
+## Решение
+
+[скрин 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/teamcity/skrin/0-1.png)
+[скрин 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/teamcity/skrin/0-2.png)
+[скрин 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/teamcity/skrin/4.png)
+[скрин 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/teamcity/skrin/7.png)
+[скрин 5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/teamcity/skrin/8.png)
+[скрин 6](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/teamcity/skrin/17.png)
+---
+
+[Репозиторий](https://github.com/AleksanderB5/example-teamcity)
