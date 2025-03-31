@@ -40,12 +40,12 @@
 
 ## Решение
 
-[скрин 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/teamcity/skrin/0-1.png)
-[скрин 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/teamcity/skrin/0-2.png)
-[скрин 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/teamcity/skrin/4.png)
-[скрин 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/teamcity/skrin/7.png)
-[скрин 5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/teamcity/skrin/8.png)
-[скрин 6](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/teamcity/skrin/17.png)
+![скрин 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/teamcity/skrin/0-1.png)
+![скрин 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/teamcity/skrin/0-2.png)
+![скрин 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/teamcity/skrin/4.png)
+![скрин 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/teamcity/skrin/7.png)
+![скрин 5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/teamcity/skrin/8.png)
+![скрин 6](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/teamcity/skrin/17.png)
 ---
 
 [Репозиторий](https://github.com/AleksanderB5/example-teamcity)
