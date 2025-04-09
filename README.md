@@ -11,7 +11,7 @@
 
 ### Решение 1
 
-![Скриншот 1]()
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/СредствовизуализацииGrafana/Scrin/1.png)
 
 ## Задание 2
 
@@ -53,7 +53,7 @@ node_memory_MemFree_bytes
 node_filesystem_avail_bytes/(1024*1024*1024)
 ```
 
-![Скриншот 1]()
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/СредствовизуализацииGrafana/Scrin/2.png)
 
 ## Задание 3
 
@@ -62,7 +62,7 @@ node_filesystem_avail_bytes/(1024*1024*1024)
 
 ### Решение 3
 
-![Скриншот 1]()
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/СредствовизуализацииGrafana/Scrin/3.png)
 
 ## Задание 4
 
@@ -71,7 +71,7 @@ node_filesystem_avail_bytes/(1024*1024*1024)
 
 ### Решение 4
 
-[JSON]()
+[JSON](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/СредствовизуализацииGrafana/JSON-MODEL.json)
 
 ---
 
