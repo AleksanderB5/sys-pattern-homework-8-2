@@ -46,13 +46,13 @@ Filebeat следует сконфигурировать для отправки
 
 ### Решение 1
 
-![Скриншот 1](
-![Скриншот 1]()
-![Скриншот 1]()
-![Скриншот 1]()
-![Скриншот 1]()
-![Скриншот 1]()
-![Скриншот 1]()
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ElasticStack/Скрины/1-1.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ElasticStack/Скрины/1-2.png)
+![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ElasticStack/Скрины/1-3.png)
+![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ElasticStack/Скрины/1-4.png)
+![Скриншот 5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ElasticStack/Скрины/1-5.png)
+![Скриншот 6](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ElasticStack/Скрины/1-6.png)
+![Скриншот 7](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ElasticStack/Скрины/1-7.png)
 
 ## Задание 2
 
@@ -67,9 +67,9 @@ Filebeat следует сконфигурировать для отправки
 
 ### Решение 2
 
-![Скриншот 1]()
-![Скриншот 1]()
-![Скриншот 1]()
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ElasticStack/Скрины/2-1.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ElasticStack/Скрины/2-2.png)
+![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ElasticStack/Скрины/2-3.png)
 
 ### Как оформить решение задания
 
