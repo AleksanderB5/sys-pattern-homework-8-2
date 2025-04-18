@@ -1,52 +1,78 @@
-# Домашнее задание к занятию "`Работа с roles`" - `Блинов А.С.`
-## Подготовка к выполнению
+# Домашнее задание к занятию "`Система сбора логов Elastic Stack`" - `Блинов А.С.`
 
-1. * Необязательно. Познакомьтесь с [LightHouse](https://youtu.be/ymlrNlaHzIY?t=929).
-2. Создайте два пустых публичных репозитория в любом своём проекте: vector-role и lighthouse-role.
-3. Добавьте публичную часть своего ключа к своему профилю на GitHub.
+## Дополнительные ссылки
 
-## Основная часть
+При выполнении задания используйте дополнительные ресурсы:
 
-Ваша цель — разбить ваш playbook на отдельные roles. 
+- [поднимаем elk в docker](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-docker.html);
+- [поднимаем elk в docker с filebeat и docker-логами](https://www.sarulabs.com/post/5/2019-08-12/sending-docker-logs-to-elasticsearch-and-kibana-with-filebeat.html);
+- [конфигурируем logstash](https://www.elastic.co/guide/en/logstash/current/configuration.html);
+- [плагины filter для logstash](https://www.elastic.co/guide/en/logstash/current/filter-plugins.html);
+- [конфигурируем filebeat](https://www.elastic.co/guide/en/beats/libbeat/5.3/config-file-format.html);
+- [привязываем индексы из elastic в kibana](https://www.elastic.co/guide/en/kibana/current/index-patterns.html);
+- [как просматривать логи в kibana](https://www.elastic.co/guide/en/kibana/current/discover.html);
+- [решение ошибки increase vm.max_map_count elasticsearch](https://stackoverflow.com/questions/42889241/how-to-increase-vm-max-map-count).
 
-Задача — сделать roles для ClickHouse, Vector и LightHouse и написать playbook для использования этих ролей. 
+В процессе выполнения в зависимости от системы могут также возникнуть не указанные здесь проблемы.
 
-Ожидаемый результат — существуют три ваших репозитория: два с roles и один с playbook.
+Используйте output stdout filebeat/kibana и api elasticsearch для изучения корня проблемы и её устранения.
 
-**Что нужно сделать**
+## Задание повышенной сложности
 
-1. Создайте в старой версии playbook файл `requirements.yml` и заполните его содержимым:
+Не используйте директорию [help](./help) при выполнении домашнего задания.
 
-   ```yaml
-   ---
-     - src: git@github.com:AlexeySetevoi/ansible-clickhouse.git
-       scm: git
-       version: "1.13"
-       name: clickhouse 
-   ```
+## Задание 1
 
-2. При помощи `ansible-galaxy` скачайте себе эту роль.
-3. Создайте новый каталог с ролью при помощи `ansible-galaxy role init vector-role`.
-4. На основе tasks из старого playbook заполните новую role. Разнесите переменные между `vars` и `default`. 
-5. Перенести нужные шаблоны конфигов в `templates`.
-6. Опишите в `README.md` обе роли и их параметры. Пример качественной документации ansible role [по ссылке](https://github.com/cloudalchemy/ansible-prometheus).
-7. Повторите шаги 3–6 для LightHouse. Помните, что одна роль должна настраивать один продукт.
-8. Выложите все roles в репозитории. Проставьте теги, используя семантическую нумерацию. Добавьте roles в `requirements.yml` в playbook.
-9. Переработайте playbook на использование roles. Не забудьте про зависимости LightHouse и возможности совмещения `roles` с `tasks`.
-10. Выложите playbook в репозиторий.
-11. В ответе дайте ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook.
+Вам необходимо поднять в докере и связать между собой:
 
+- elasticsearch (hot и warm ноды);
+- logstash;
+- kibana;
+- filebeat.
+
+Logstash следует сконфигурировать для приёма по tcp json-сообщений.
+
+Filebeat следует сконфигурировать для отправки логов docker вашей системы в logstash.
+
+В директории [help](./help) находится манифест docker-compose и конфигурации filebeat/logstash для быстрого 
+выполнения этого задания.
+
+Результатом выполнения задания должны быть:
+
+- скриншот `docker ps` через 5 минут после старта всех контейнеров (их должно быть 5);
+- скриншот интерфейса kibana;
+- docker-compose манифест (если вы не использовали директорию help);
+- ваши yml-конфигурации для стека (если вы не использовали директорию help).
+
+### Решение 1
+
+![Скриншот 1](
+![Скриншот 1]()
+![Скриншот 1]()
+![Скриншот 1]()
+![Скриншот 1]()
+![Скриншот 1]()
+![Скриншот 1]()
+
+## Задание 2
+
+Перейдите в меню [создания index-patterns  в kibana](http://localhost:5601/app/management/kibana/indexPatterns/create) и создайте несколько index-patterns из имеющихся.
+
+Перейдите в меню просмотра логов в kibana (Discover) и самостоятельно изучите, как отображаются логи и как производить поиск по логам.
+
+В манифесте директории help также приведенно dummy-приложение, которое генерирует рандомные события в stdout-контейнера.
+Эти логи должны порождать индекс logstash-* в elasticsearch. Если этого индекса нет — воспользуйтесь советами и источниками из раздела «Дополнительные ссылки» этого задания.
+ 
 ---
+
+### Решение 2
+
+![Скриншот 1]()
+![Скриншот 1]()
+![Скриншот 1]()
 
 ### Как оформить решение задания
 
 Выполненное домашнее задание пришлите в виде ссылки на .md-файл в вашем репозитории.
 
 ---
-## Ответ
-[playbook](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/Ansible3/playbook)
---
-[vector-role](https://github.com/AleksanderB5/vector-role.git)
---
-[lighthouse-role](https://github.com/AleksanderB5/lighthouse-role.git)
---
