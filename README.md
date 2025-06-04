@@ -48,17 +48,17 @@
 
 ### Решение 1
 
-![Скриншот 1]()
-![Скриншот 2]()
-![Скриншот 3]()
-![Скриншот 4]()
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БазовыеобъектыK8S/файлы/1-1.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БазовыеобъектыK8S/файлы/1-2.png)
+![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БазовыеобъектыK8S/файлы/1-3.png)
+![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БазовыеобъектыK8S/файлы/1-4.png)
 
 ### Решение 2
 
-![Скриншот 1]()
-![Скриншот 2]()
-![Скриншот 3]()
-![Скриншот 4]()
-![Скриншот 5]()
-![Скриншот 6]()
-![Скриншот 7]()
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БазовыеобъектыK8S/файлы/2-1.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БазовыеобъектыK8S/файлы/2-2.png)
+![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БазовыеобъектыK8S/файлы/2-3.png)
+![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БазовыеобъектыK8S/файлы/2-4.png)
+![Скриншот 5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БазовыеобъектыK8S/файлы/2-5.png)
+![Скриншот 6](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БазовыеобъектыK8S/файлы/2-6.png)
+![Скриншот 7](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БазовыеобъектыK8S/файлы/2-7.png)
