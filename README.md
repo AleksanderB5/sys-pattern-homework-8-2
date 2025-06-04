@@ -1,48 +1,64 @@
-# Домашнее задание к занятию "`Работа с Playbook`" - `Блинов А.С.`
+# Домашнее задание к занятию "`Базовые объекты K8S`" - `Блинов А.С.`
 
-## Подготовка к выполнению
+### Цель задания
 
-1. * Необязательно. Изучите, что такое [ClickHouse](https://www.youtube.com/watch?v=fjTNS2zkeBs) и [Vector](https://www.youtube.com/watch?v=CgEhyffisLY).
-2. Создайте свой публичный репозиторий на GitHub с произвольным именем или используйте старый.
-3. Скачайте [Playbook](./playbook/) из репозитория с домашним заданием и перенесите его в свой репозиторий.
-4. Подготовьте хосты в соответствии с группами из предподготовленного playbook.
+В тестовой среде для работы с Kubernetes, установленной в предыдущем ДЗ, необходимо развернуть Pod с приложением и подключиться к нему со своего локального компьютера. 
 
-## Основная часть
-
-1. Подготовьте свой inventory-файл `prod.yml`.
-2. Допишите playbook: нужно сделать ещё один play, который устанавливает и настраивает [vector](https://vector.dev). Конфигурация vector должна деплоиться через template файл jinja2. От вас не требуется использовать все возможности шаблонизатора, просто вставьте стандартный конфиг в template файл. Информация по шаблонам по [ссылке](https://www.dmosk.ru/instruktions.php?object=ansible-nginx-install). не забудьте сделать handler на перезапуск vector в случае изменения конфигурации!
-3. При создании tasks рекомендую использовать модули: `get_url`, `template`, `unarchive`, `file`.
-4. Tasks должны: скачать дистрибутив нужной версии, выполнить распаковку в выбранную директорию, установить vector.
-5. Запустите `ansible-lint site.yml` и исправьте ошибки, если они есть.
-6. Попробуйте запустить playbook на этом окружении с флагом `--check`.
-7. Запустите playbook на `prod.yml` окружении с флагом `--diff`. Убедитесь, что изменения на системе произведены.
-8. Повторно запустите playbook с флагом `--diff` и убедитесь, что playbook идемпотентен.
-9. Подготовьте README.md-файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги. Пример качественной документации ansible playbook по [ссылке](https://github.com/opensearch-project/ansible-playbook). Так же приложите скриншоты выполнения заданий №5-8
-10. Готовый playbook выложите в свой репозиторий, поставьте тег `08-ansible-02-playbook` на фиксирующий коммит, в ответ предоставьте ссылку на него.
-
----
-
-### Как оформить решение задания
-
-Выполненное домашнее задание пришлите в виде ссылки на .md-файл в вашем репозитории.
-
----
-
-### Решение 1-5
-
-![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible2/файлы/1-5.png)
-
-### Решение 6
-![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible2/файлы/6-1.png)
-![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible2/файлы/6-2.png)
-### Решение 7
-![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible2/файлы/7-1.png)
-![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible2/файлы/7-2.png)
-### Решение 8
-![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible2/файлы/8-1.png)
-![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible2/файлы/8-2.png)
 ------
-### Решение 9
-[README](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Ansible2/playbook/README.md)
-[playbook](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/Ansible2/playbook)
 
+### Чеклист готовности к домашнему заданию
+
+1. Установленное k8s-решение (например, MicroK8S).
+2. Установленный локальный kubectl.
+3. Редактор YAML-файлов с подключенным Git-репозиторием.
+
+------
+
+### Инструменты и дополнительные материалы, которые пригодятся для выполнения задания
+
+1. Описание [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) и примеры манифестов.
+2. Описание [Service](https://kubernetes.io/docs/concepts/services-networking/service/).
+
+------
+
+### Задание 1. Создать Pod с именем hello-world
+
+1. Создать манифест (yaml-конфигурацию) Pod.
+2. Использовать image - gcr.io/kubernetes-e2e-test-images/echoserver:2.2.
+3. Подключиться локально к Pod с помощью `kubectl port-forward` и вывести значение (curl или в браузере).
+
+------
+
+### Задание 2. Создать Service и подключить его к Pod
+
+1. Создать Pod с именем netology-web.
+2. Использовать image — gcr.io/kubernetes-e2e-test-images/echoserver:2.2.
+3. Создать Service с именем netology-svc и подключить к netology-web.
+4. Подключиться локально к Service с помощью `kubectl port-forward` и вывести значение (curl или в браузере).
+
+------
+
+### Правила приёма работы
+
+1. Домашняя работа оформляется в своем Git-репозитории в файле README.md. Выполненное домашнее задание пришлите ссылкой на .md-файл в вашем репозитории.
+2. Файл README.md должен содержать скриншоты вывода команд `kubectl get pods`, а также скриншот результата подключения.
+3. Репозиторий должен содержать файлы манифестов и ссылки на них в файле README.md.
+
+------
+
+### Решение 1
+
+![Скриншот 1]()
+![Скриншот 2]()
+![Скриншот 3]()
+![Скриншот 4]()
+
+### Решение 2
+
+![Скриншот 1]()
+![Скриншот 2]()
+![Скриншот 3]()
+![Скриншот 4]()
+![Скриншот 5]()
+![Скриншот 6]()
+![Скриншот 7]()
