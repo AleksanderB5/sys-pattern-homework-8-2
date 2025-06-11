@@ -1,4 +1,5 @@
 # Домашнее задание к занятию "`Хранение в K8s. Часть 2`" - `Блинов А.С.`
+
 ### Цель задания
 
 В тестовой среде Kubernetes нужно создать PV и продемострировать запись и хранение файлов.
@@ -59,26 +60,28 @@
 
 
 ### Решение 1
-![Скриншот 1]()
-![Скриншот 1]()
-![Скриншот 1]()
-![Скриншот 1]()
-![Скриншот 1]()
-![Скриншот 1]()
-![Скриншот 1]()
-![Скриншот 1]()
-![Скриншот 1]()
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/1-1.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/1-2.png)
+![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/1-3.png)
+![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/1-4.png)
+![Скриншот 5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/1-5.png)
+![Скриншот 6](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/1-6.png)
+![Скриншот 7](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/1-7.png)
+`STATUS PV изменился на Released после удаления PVC. Это происходит потому, что PVC был удален, но PV остается зарезервированным до тех пор, пока его не освободят.`
+![Скриншот 8](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/1-8.png)
+![Скриншот 9](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/1-9.png)
+`После удаления PV файл shared.txt останется на локальном диске, поскольку он создается в локальной файловой системе, а не в пространстве, управляемом Kubernetes. Это объясняется тем, что hostPath монтирует директорию непосредственно на ноду, и файлы, созданные в этой директории, сохраняются даже после удаления PV.`
 ------
 
 ### Решение 2
-![Скриншот 1]()
-![Скриншот 2]()
-![Скриншот 3]()
-![Скриншот 4]()
-![Скриншот 5]()
-![Скриншот 6]()
-![Скриншот 7]()
-![Скриншот 8]()
-![Скриншот 9]()
-![Скриншот 10]()
-![Скриншот 11]()
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/2-1.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/2-2.png)
+![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/2-3.png)
+![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/2-4.png)
+![Скриншот 5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/2-5.png)
+![Скриншот 6](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/2-6.png)
+![Скриншот 7](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/2-7.png)
+![Скриншот 8](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/2-8.png)
+![Скриншот 9](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/2-9.png)
+![Скриншот 10](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/2-10.png)
+![Скриншот 11](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/2-11.png)
