@@ -68,7 +68,9 @@
 ![Скриншот 6](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/1-6.png)
 ![Скриншот 7](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/1-7.png)
 ```
-STATUS PV изменился на Released после удаления PVC. Это происходит потому, что PVC был удален, но PV остается зарезервированным до тех пор, пока его не освободят.
+STATUS PV изменился на Released после удаления PVC.
+Это происходит потому, что PVC был удален, но PV остается
+зарезервированным до тех пор, пока его не освободят.
 ```
 ![Скриншот 8](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/1-8.png)
 ![Скриншот 9](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ХранениевK8s.Часть2/файлы/1-9.png)
