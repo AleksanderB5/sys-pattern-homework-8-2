@@ -32,11 +32,11 @@
 ------
 
 ### Решение 1
-![Скриншот 1]()
-![Скриншот 2]()
-![Скриншот 3]()
-![Скриншот 4]()
-![Скриншот 5]()
-![Скриншот 6]()
-![Скриншот 7]()
-![Скриншот 8]()
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Управлениедоступом/файлы/1-1.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Управлениедоступом/файлы/1-2.png)
+![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Управлениедоступом/файлы/1-3.png)
+![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Управлениедоступом/файлы/1-4.png)
+![Скриншот 5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Управлениедоступом/файлы/1-5.png)
+![Скриншот 6](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Управлениедоступом/файлы/1-6.png)
+![Скриншот 7](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Управлениедоступом/файлы/1-7.png)
+![Скриншот 8](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Управлениедоступом/файлы/1-8.png)
