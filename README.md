@@ -42,10 +42,13 @@
 
 ### Решение
 ![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Helm/файлы/1-1.png)
+
 ------
+
 ##### Редактируем файлы:
 1. [values.yaml](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Helm/файлы/values.yaml)
 2. [deployment.yaml](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Helm/файлы/deployment.yaml)
+
 ------
 
 ![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Helm/файлы/1-2.png)
