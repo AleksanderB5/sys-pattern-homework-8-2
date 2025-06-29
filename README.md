@@ -1,4 +1,4 @@
-# Домашнее задание к занятию "`Запуск приложений в K8S`" - `Блинов А.С.`
+# Домашнее задание к занятию "`Helm`" - `Блинов А.С.`
 
 ### Цель задания
 
@@ -41,4 +41,19 @@
 3. Репозиторий должен содержать тексты манифестов или ссылки на них в файле README.md.
 
 ### Решение
-![Скриншот 1]()
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Helm/файлы/1-1.png)
+------
+## Редактируем файлы:
+1. [values.yaml](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Helm/файлы/values.yaml)
+2. [deployment.yaml](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Helm/файлы/deployment.yaml)
+------
+
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Helm/файлы/1-2.png)
+![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Helm/файлы/1-3.png)
+![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Helm/файлы/1-4.png)
+![Скриншот 5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Helm/файлы/1-5.png)
+![Скриншот 6](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Helm/файлы/1-6.png)
+![Скриншот 7](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Helm/файлы/1-7.png)
+![Скриншот 8](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Helm/файлы/1-8.png)
+![Скриншот 9](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Helm/файлы/1-9.png)
+
