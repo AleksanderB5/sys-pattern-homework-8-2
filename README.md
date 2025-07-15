@@ -34,7 +34,6 @@ Resource Terraform для Yandex Cloud:
 
 ### Решение
 
------
 - [terraform](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/ОрганизацияCети/terraform)
 -----
 
