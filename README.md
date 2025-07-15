@@ -34,24 +34,24 @@ Resource Terraform для Yandex Cloud:
 
 ### Решение
 
-![Скриншот 1]()
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/1.png)
 ---
-![Скриншот 2]()
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/2.png)
 ---
-![Скриншот 3]()
+![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/3.png)
 ---
-![Скриншот 4]()
+![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/4.png)
 ---
-![Скриншот 5]()
+![Скриншот 5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/5.png)
 ---
-![Скриншот 6]()
+![Скриншот 6](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/6.png)
 ---
-![Скриншот 7]()
+![Скриншот 7](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/7.png)
 ---
-![Скриншот 8]()
+![Скриншот 8](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/8.png)
 ---
-![Скриншот 9]()
+![Скриншот 9](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/9.png)
 ---
-![Скриншот 10]()
+![Скриншот 10](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/10.png)
 ---
-![Скриншот 11]()
+![Скриншот 11](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/11.png)
