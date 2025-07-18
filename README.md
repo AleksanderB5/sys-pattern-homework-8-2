@@ -12,16 +12,16 @@
 
 ### Решение 
 
-- [terraform]()
+- [terraform](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/Безопасностьвоблачныхпровайдерах/terraform)
 -----
 
-![Скриншот 1]()
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Безопасностьвоблачныхпровайдерах/Скрины/1-1.png)
 ---
-![Скриншот 2]()
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Безопасностьвоблачныхпровайдерах/Скрины/2-1.png)
 ---
-![Скриншот 3]()
+![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Безопасностьвоблачныхпровайдерах/Скрины/3-1.png)
 ---
-![Скриншот 4]()
+![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Безопасностьвоблачныхпровайдерах/Скрины/4-1.png)
 ---
-![Скриншот 5]()
+![Скриншот 5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Безопасностьвоблачныхпровайдерах/Скрины/5-1.png)
 ---
