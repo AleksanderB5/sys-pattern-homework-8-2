@@ -1,59 +1,88 @@
-# Домашнее задание к занятию "`Организация сети`" - `Блинов А.С.`
-
+# Домашнее задание к занятию "`Вычислительные мощности. Балансировщики нагрузки`" - `Блинов А.С.`
 
 ### Подготовка к выполнению задания
 
 1. Домашнее задание состоит из обязательной части, которую нужно выполнить на провайдере Yandex Cloud, и дополнительной части в AWS (выполняется по желанию). 
 2. Все домашние задания в блоке 15 связаны друг с другом и в конце представляют пример законченной инфраструктуры.  
 3. Все задания нужно выполнить с помощью Terraform. Результатом выполненного домашнего задания будет код в репозитории. 
-4. Перед началом работы настройте доступ к облачным ресурсам из Terraform, используя материалы прошлых лекций и домашнее задание по теме «Облачные провайдеры и синтаксис Terraform». Заранее выберите регион (в случае AWS) и зону.
+4. Перед началом работы настройте доступ к облачным ресурсам из Terraform, используя материалы прошлых лекций и домашних заданий.
 
 ---
-### Задание 1. Yandex Cloud 
+## Задание 1. Yandex Cloud 
 
 **Что нужно сделать**
 
-1. Создать пустую VPC. Выбрать зону.
-2. Публичная подсеть.
+1. Создать бакет Object Storage и разместить в нём файл с картинкой:
 
- - Создать в VPC subnet с названием public, сетью 192.168.10.0/24.
- - Создать в этой подсети NAT-инстанс, присвоив ему адрес 192.168.10.254. В качестве image_id использовать fd80mrhj8fl2oe87o4e1.
- - Создать в этой публичной подсети виртуалку с публичным IP, подключиться к ней и убедиться, что есть доступ к интернету.
-3. Приватная подсеть.
- - Создать в VPC subnet с названием private, сетью 192.168.20.0/24.
- - Создать route table. Добавить статический маршрут, направляющий весь исходящий трафик private сети в NAT-инстанс.
- - Создать в этой приватной подсети виртуалку с внутренним IP, подключиться к ней через виртуалку, созданную ранее, и убедиться, что есть доступ к интернету.
+ - Создать бакет в Object Storage с произвольным именем (например, _имя_студента_дата_).
+ - Положить в бакет файл с картинкой.
+ - Сделать файл доступным из интернета.
+ 
+2. Создать группу ВМ в public подсети фиксированного размера с шаблоном LAMP и веб-страницей, содержащей ссылку на картинку из бакета:
 
-Resource Terraform для Yandex Cloud:
+ - Создать Instance Group с тремя ВМ и шаблоном LAMP. Для LAMP рекомендуется использовать `image_id = fd827b91d99psvq5fjit`.
+ - Для создания стартовой веб-страницы рекомендуется использовать раздел `user_data` в [meta_data](https://cloud.yandex.ru/docs/compute/concepts/vm-metadata).
+ - Разместить в стартовой веб-странице шаблонной ВМ ссылку на картинку из бакета.
+ - Настроить проверку состояния ВМ.
+ 
+3. Подключить группу к сетевому балансировщику:
 
-- [VPC subnet](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/vpc_subnet).
-- [Route table](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/vpc_route_table).
-- [Compute Instance](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/compute_instance).
+ - Создать сетевой балансировщик.
+ - Проверить работоспособность, удалив одну или несколько ВМ.
+4. (дополнительно)* Создать Application Load Balancer с использованием Instance group и проверкой состояния.
+
+Полезные документы:
+
+- [Compute instance group](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/compute_instance_group).
+- [Network Load Balancer](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/lb_network_load_balancer).
+- [Группа ВМ с сетевым балансировщиком](https://cloud.yandex.ru/docs/compute/operations/instance-groups/create-with-balancer).
 
 ---
 
-### Решение
+### Решение 1-3
 
-- [terraform](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/ОрганизацияCети/terraform)
+- [terraform]()
 -----
 
-![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/1.png)
+![Скриншот 1]()
 ---
-![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/2.png)
+![Скриншот 2]()
 ---
-![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/3.png)
+![Скриншот 3]()
 ---
-![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/4.png)
+![Скриншот 4]()
 ---
-![Скриншот 5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/5.png)
+![Скриншот 5]()
 ---
-![Скриншот 6](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/6.png)
-![Скриншот 7](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/7.png)
+![Скриншот 6]()
 ---
-![Скриншот 8](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/8.png)
+![Скриншот 7]()
 ---
-![Скриншот 9](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/9.png)
+![Скриншот 8]()
 ---
-![Скриншот 10](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/10.png)
+![Скриншот 9]()
 ---
-![Скриншот 11](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/ОрганизацияCети/Скрины/11.png)
+![Скриншот 10]()
+---
+![Скриншот 11]()
+---
+
+### Решение 4
+---
+![Скриншот 1]()
+---
+![Скриншот 2]()
+---
+![Скриншот 3]()
+---
+![Скриншот 4]()
+---
+![Скриншот 5]()
+---
+![Скриншот 6]()
+---
+![Скриншот 7]()
+---
+![Скриншот 8]()
+---
+
