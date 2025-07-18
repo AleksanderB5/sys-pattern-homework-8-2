@@ -41,48 +41,48 @@
 
 ### Решение 1-3
 
-- [terraform]()
+- [terraform](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/БалансировщикиНагрузки/terraform)
 -----
 
-![Скриншот 1]()
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/1-1.png)
 ---
-![Скриншот 2]()
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/1-2.png)
 ---
-![Скриншот 3]()
+![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/1-3.png)
 ---
-![Скриншот 4]()
+![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/1-4.png)
 ---
-![Скриншот 5]()
+![Скриншот 5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/1-5.png)
 ---
-![Скриншот 6]()
+![Скриншот 6](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/1-6.png)
 ---
-![Скриншот 7]()
+![Скриншот 7](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/1-7.png)
 ---
-![Скриншот 8]()
+![Скриншот 8](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/1-8.png)
 ---
-![Скриншот 9]()
+![Скриншот 9](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/1-9.png)
 ---
-![Скриншот 10]()
+![Скриншот 10](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/1-10.png)
 ---
-![Скриншот 11]()
+![Скриншот 11](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/1-11.png)
 ---
 
 ### Решение 4
 ---
-![Скриншот 1]()
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/4-1.png)
 ---
-![Скриншот 2]()
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/4-2.png)
 ---
-![Скриншот 3]()
+![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/4-3.png)
 ---
-![Скриншот 4]()
+![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/4-4.png)
 ---
-![Скриншот 5]()
+![Скриншот 5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/4-5.png)
 ---
-![Скриншот 6]()
+![Скриншот 6](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/4-6.png)
 ---
-![Скриншот 7]()
+![Скриншот 7](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/4-7.png)
 ---
-![Скриншот 8]()
+![Скриншот 8](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/БалансировщикиНагрузки/Скрины/4-8.png)
 ---
 
