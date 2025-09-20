@@ -1,0 +1,42 @@
+all:
+  hosts:
+    cp:
+      ansible_host: 89.169.149.44
+      ip: 10.10.1.31
+      access_ip: 10.10.1.31
+      ansible_user: aleks
+      ansible_ssh_private_key_file: ~/.ssh/id_rsa
+
+    node1:
+      ansible_host: 158.160.5.237
+      ip: 10.10.2.18
+      access_ip: 10.10.2.18
+      ansible_user: aleks
+      ansible_ssh_private_key_file: ~/.ssh/id_rsa
+
+    node2:
+      ansible_host: 158.160.154.31
+      ip: 10.10.3.9
+      access_ip: 10.10.3.9
+      ansible_user: aleks
+      ansible_ssh_private_key_file: ~/.ssh/id_rsa
+  children:
+    kube_control_plane:
+      hosts:
+        cp:
+    kube_node:
+      hosts:
+        cp:
+        node1:
+        node2:
+    etcd:
+      hosts:
+        cp:
+        node1:
+        node2:
+    k8s_cluster:
+      children:
+        kube_control_plane:
+        kube_node:
+    calico_rr:
+      hosts: {}
