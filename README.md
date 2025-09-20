@@ -146,7 +146,20 @@
 ### Решение 1
 
 Используемый [terraform](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/Diplom/N1).
-
+--
 ![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/1-1.png)
-![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/1-2.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/1-2.png)
+---
+
+### Решение 2
+
+Взял проект из github:
+```sql
+git clone https://github.com/kubernetes-sigs/kubespray
+```
+И подправил под себя: [Итог](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/Diplom/N2)
+--
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/2-1.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/2-2.png)
+![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/2-3.png)
 ---
