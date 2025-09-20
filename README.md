@@ -163,3 +163,14 @@ git clone https://github.com/kubernetes-sigs/kubespray
 ![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/2-2.png)
 ![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/2-3.png)
 ---
+
+### Решение 3
+
+Ссылка на [репозиторий](https://github.com/AleksanderB5/app)
+--
+
+[Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/3-1.png)
+[Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/3-2.png)
+[Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/3-3.png)
+
+---
