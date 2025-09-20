@@ -174,3 +174,53 @@ git clone https://github.com/kubernetes-sigs/kubespray
 ![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/3-3.png)
 
 ---
+
+### Решение 4
+
+Для установки мониторинга Kubernetes кластера воспользуемся пакетом [Kube-Prometheus-Stack](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack)
+
+Для доступа к сервису заменяем тип ClusterIP на LoadBalancer (type: LoadBalancer):
+```sql
+kubectl edit svc k8sgraf-grafana
+Меняю это
+  ...
+  selector:
+    app.kubernetes.io/instance: stable
+    app.kubernetes.io/name: grafana
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
+
+на это
+
+  ...
+  selector:
+    app.kubernetes.io/instance: stable
+    app.kubernetes.io/name: grafana
+  sessionAffinity: None
+  type: LoadBalancer
+
+```
+
+Доступ к [дашбордам grafana](http://89.169.149.44:31829/login)
+Стандартный логин пароль — admin / prom-operator
+
+--
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/4-1.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/4-2.png)
+![Скриншот 3](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/4-3.png)
+![Скриншот 4](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/4-4.png)
+![Скриншот 5](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/4-5.png)
+![Скриншот 6](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/4-6.png)
+![Скриншот 7](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/4-7.png)
+![Скриншот 8](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/4-8.png)
+![Скриншот 9](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/4-9.png)
+![Скриншот 10](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/4-10.png)
+
+Файлы [ТУТ](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/Diplom/N4)
+
+Приложение работает везде:[cp](http://89.169.149.44:30080/) [node1](http://158.160.5.237:30080/) [node2](http://158.160.154.31:30080/)
+
+---
