@@ -224,3 +224,11 @@ status:
 Приложение работает везде:[cp](http://89.169.149.44:30080/) [node1](http://158.160.5.237:30080/) [node2](http://158.160.154.31:30080/)
 
 ---
+
+### Решение 5
+
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/5-1.png)
+![Скриншот 2](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/5-2.png)
+
+---
+Интерфейс ci/cd сервиса доступен по [http](https://github.com/AleksanderB5/app/actions/workflows/ci-cd.yml)
