@@ -145,7 +145,8 @@
 
 ### Решение 1
 
+Используемый [terraform](https://github.com/AleksanderB5/sys-pattern-homework-8-2/tree/Diplom/N1).
 
-
-![Скриншот 5]()
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/1-1.png)
+![Скриншот 1](https://github.com/AleksanderB5/sys-pattern-homework-8-2/blob/Diplom/Скрины/1-2.png)
 ---
